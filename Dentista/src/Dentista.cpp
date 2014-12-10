@@ -12,6 +12,6 @@ using namespace std;
 int main() {
 	cout << "Esto es una prueba de pushion"
 	cout << "cambiando algo" << endl; // prints !!!Hello World!!!
-	cout << "Pussshionnnnnn" << endl;
+	cout << "Pusss" << endl;
 	return 0;
 }
