@@ -8,6 +8,7 @@
 #ifndef AGENDA_H_
 #define AGENDA_H_
 #include <string>
+#include <list>
 
 class Agenda {
 public:
