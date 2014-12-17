@@ -16,3 +16,21 @@ Agenda::Agenda() {
 Agenda::~Agenda() {
 	// TODO Auto-generated destructor stub
 }
+
+bool Agenda::anadirContacto(Contacto c){
+
+//Añadir contacto a .txt
+
+	return 1;
+
+}
+
+bool Agenda::modificarContacto(std::string DNI, Contacto c){
+
+	return 1;
+}
+
+bool Agenda::eliminarContacto(std::string DNI){
+
+	return 1;
+}
