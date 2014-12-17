@@ -16,3 +16,14 @@ GUI::~GUI() {
 	// TODO Auto-generated destructor stub
 }
 
+
+bool GUI::copiaSeguridad(){
+	return 1;
+}
+
+bool GUI::imprimirAgenda(){
+
+	return 1;
+}
+
+

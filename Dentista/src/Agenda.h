@@ -21,7 +21,7 @@ public:
 	bool modificarContacto(std::string DNI, Contacto contacto);
 	bool eliminarContacto(std::string DNI);
 	std::list<Contacto> buscarApellido(std::string apellido);
-	void copiaSeguridad();
+
 
 };
 
