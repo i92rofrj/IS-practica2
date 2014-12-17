@@ -19,18 +19,18 @@ Agenda::~Agenda() {
 
 bool Agenda::anadirContacto(Contacto c){
 
-//Añadir contacto a .txt
+//Añadir linea con contacto al .txt
 
 	return 1;
 
 }
 
 bool Agenda::modificarContacto(std::string DNI, Contacto c){
-
+	//modificar linea en .txt si lo encuentra
 	return 1;
 }
 
 bool Agenda::eliminarContacto(std::string DNI){
-
+	//Eliminar linea en .txt
 	return 1;
 }
