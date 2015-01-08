@@ -6,7 +6,12 @@
  */
 
 #include "Agenda.h"
+#include "Contacto.h"
 #include <string>
+#include <fstream>
+#include <iostream>
+
+
 
 Agenda::Agenda() {
 	// TODO Auto-generated constructor stub
@@ -17,9 +22,22 @@ Agenda::~Agenda() {
 	// TODO Auto-generated destructor stub
 }
 
-bool Agenda::anadirContacto(Contacto c){
+bool Agenda::anadirContacto (Contacto c){
 
-//Añadir linea con contacto al .txt
+	std::ofstream salida("pacientes.txt",std::ios::app);
+
+
+	salida 	<< c.getDni() << ";"
+			<< c.getNombre() << ";"
+			<< c.getApellido() <<  ";"
+			<< c.getTelefono() << ";"
+			<< c.isFavorito() << ";"
+			<< c.getFrecuencia() << ";"
+			<< c.getCalle() << ","
+			<<	c.getNumero() << "\n";
+
+
+	salida.close();
 
 	return 1;
 

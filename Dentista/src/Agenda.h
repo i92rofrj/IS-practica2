@@ -9,6 +9,8 @@
 #define AGENDA_H_
 #include <string>
 #include <list>
+#include "Contacto.h"
+
 
 
 

@@ -9,6 +9,8 @@
 
 Contacto::Contacto() {
 	// TODO Auto-generated constructor stub
+	favorito_ = 0;
+	frecuencia_ = 0;
 
 }
 
