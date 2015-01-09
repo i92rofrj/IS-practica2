@@ -15,6 +15,9 @@ public:
 
 	bool imprimirAgenda();
 	bool copiaSeguridad();
+	int mostrarMenu();
+	void seleccionOpcion(int opcion);
+	void error (const char * p , const char * p2="");
 
 };
 

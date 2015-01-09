@@ -20,26 +20,27 @@ class Contacto {
 	struct rrSS{
 		std::string nombreRed;
 		std::string usuario;
-	}redesSociales;
+	} redesSociales;
 
 public:
 	Contacto();
 	virtual ~Contacto();
+
 	const std::string& getApellido() const { return apellido_;	}
 
 	void setApellido(const std::string& apellido) {	apellido_ = apellido;	}
 
 	const std::string getCalle() const {	return direcciones.calle; }
 
-	void setCalle(const std::string& calle) {	this->direcciones.calle = calle;	}
+	void setCalle(const std::string& calle) {	direcciones.calle = calle; }
 
 	const std::string& getDni() const {	return DNI_;	}
 
 	void setDni(const std::string& dni) {	DNI_ = dni;	}
 
-	bool isFavorito() const {	return favorito_;	}
+	int isFavorito() const {	return favorito_;	}
 
-	void setFavorito(bool favorito) {	favorito_ = favorito;	}
+	void setFavorito(int favorito) {	favorito_ = favorito;	}
 
 	int getFrecuencia() const {		return frecuencia_;	}
 
@@ -66,17 +67,16 @@ public:
 	void setUsuario(const std::string& usuario) {	this->redesSociales.usuario = usuario;	}
 
 
-
 private:
 	std::string nombre_;
 	std::string apellido_;
 	std::string DNI_;
 	std::string telefono_;
-	bool favorito_;
+	int favorito_;
 	int frecuencia_;
 
-	std::list <direccion> direcciones_;
-	std::list <rrSS> rS_;
+	//std::list <direccion> direcciones_; No sabemos como acceder a esta lista desde Agenda.cpp
+	//std::list <rrSS> rS_;   No sabemos como acceder a esta lista desde Agenda.cpp
 
 
 };
